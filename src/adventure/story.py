@@ -2,6 +2,8 @@ from adventure.utils import read_events_from_file
 import random
 from rich import print
 
+default_message = "You stand still, unsure what to do. The forest swallows you."
+
 def step(choice: str, events):
     random_event = random.choice(events)
 
